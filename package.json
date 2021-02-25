@@ -2,6 +2,9 @@
   "name": "CunstructorJs",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "serve": "parcel ./src/index.html"
+  },
   "repository": "https://github.com/Sadaev/CunstructorJs.git",
   "author": "Садаев Шынгыс <sadaevsh@gmail.com>",
   "license": "MIT",
