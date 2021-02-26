@@ -1,15 +1,15 @@
 {
   "name": "CunstructorJs",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "serve": "parcel ./src/index.html -p 1234",
+    "start": "parcel serve ./src/index.html -p 4200",
     "build": "parcel build ./src/index.html"
   },
   "repository": "https://github.com/Sadaev/CunstructorJs.git",
   "author": "Садаев Шынгыс <sadaevsh@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1"
+    "parcel": "^1.12.4"
   }
 }
