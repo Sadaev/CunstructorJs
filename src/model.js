@@ -1,11 +1,10 @@
 import image from './assets/image.jpg' 
-import { Block } from './classes/blocks'
+import { Block, ColumnsBlock, ImageBlock, TextBlock, TitleBlock } from './classes/blocks'
 
 const text = 'Трудись работай не бойся завтро укрепи сознание сердце остовайся человеком не потеряй себя'
 
 export const model = [
-    new Block(
-        'title', 
+    new TitleBlock(
         'Конструктор сайтов на чистом JavaScript', 
         {
             tag: 'h2',
@@ -17,8 +16,7 @@ export const model = [
             }
         }
     ),
-    new Block(
-        'image', 
+    new ImageBlock(
         image, 
         {
             styles: {
@@ -33,8 +31,7 @@ export const model = [
             alt: 'Картинка',
         }
     ),
-    new Block(
-        'columns', 
+    new ColumnsBlock(
         [   
             'Приложение на чистом JavaScript, без использования библиотек', 
             'Узнаеш как работают принципы Solid и ООП в JavaScript за один курс', 
@@ -49,9 +46,8 @@ export const model = [
             }
         }
     ),
-    new Block(
-        'text',
-        text, 
+    new TextBlock(
+        text,
         {
             styles: {
                 background: 'linear-gradient(to left, #f2994a, #f2c94c)',
