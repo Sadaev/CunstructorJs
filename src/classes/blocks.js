@@ -16,7 +16,7 @@ export class TitleBlock extends Block{
     }
 
     toHtml(){
-        const {tag = h1, styles} = this.options
+        const {tag = 'h1', styles} = this.options
         return row(col(`<${tag}>${this.value}</${tag}>`), css(styles))
     }
 }
