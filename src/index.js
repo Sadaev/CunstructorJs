@@ -7,6 +7,7 @@ const $site = document.querySelector('#site')
 
 
 model.forEach(block => {
+    console.log(block);
     const toHtml = templates[block.type]
     if(toHtml){
         $site.insertAdjacentHTML('beforeend', toHtml(block))
